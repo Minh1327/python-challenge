@@ -2,12 +2,12 @@
 import os
 import csv
 
-csvpath = os.path.join('.', 'Resources', 'election_data.csv')
+csvpath = os.path.join('Resources', 'election_data.csv')
 total_votes = 0
 candidates_list = []
 
 # Specify the file to write to
-output_path = os.path.join(".", "analysis", "result.csv")
+output_path = os.path.join("analysis", "result.csv")
 
 results = open(output_path, 'w')
 

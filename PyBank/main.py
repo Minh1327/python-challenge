@@ -2,7 +2,7 @@
 import os
 import csv
 
-csvpath = os.path.join('.', 'Resources', 'budget_data.csv')
+csvpath = os.path.join('Resources', 'budget_data.csv')
 
 month_list = []
 net_total = 0
@@ -49,7 +49,7 @@ with open(csvpath) as csvfile:
         f'Greatest Decrease in Profits: {month_list[min_index+1]} (${min(change_list)})')
 
     # Specify the file to write to
-output_path = os.path.join(".", "analysis", "result.csv")
+output_path = os.path.join("analysis", "result.csv")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w') as result:
